@@ -81,6 +81,16 @@ BENCHMARKS = {
         module_path="openbench.evals.simpleqa",
         function_name="simpleqa",
     ),
+    "simpleqa_search_signal": BenchmarkMetadata(
+        name="SimpleQA (Search-Signal)",
+        description=(
+            "SimpleQA variant that measures abstention via tool calls; exposes a web_search tool without executing it"
+        ),
+        category="core",
+        tags=["factuality", "question-answering", "graded", "tools", "abstention"],
+        module_path="openbench.evals.simpleqa_search_signal",
+        function_name="simpleqa_search_signal",
+    ),
     "healthbench": BenchmarkMetadata(
         name="HealthBench",
         description="Medical dialogue evaluation using physician-created rubrics for assessing healthcare conversations",
